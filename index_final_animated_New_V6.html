@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Busan_Helsinki_Port_Route V6</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="info-panel">
+    <h2>🚢 Busan_Helsinki_Port_Route</h2>
+    <div class="button-row">
+      <button onclick="startRoute('forward')">Busan → Helsinki</button>
+      <button onclick="startRoute('backward')">Helsinki → Busan</button>
+    </div>
+    <div class="button-row">
+      <button onclick="setSpeed(13)">Slow</button>
+      <button onclick="setSpeed(17)">Normal</button>
+      <button onclick="setSpeed(20)">Fast</button>
+    </div>
+    <div class="button-row">
+      <button onclick="pauseShip()">Pause</button>
+      <button onclick="resumeShip()">Resume</button>
+    </div>
+    <div id="infoBar" class="info-text"></div>
+  </div>
+  <script src="routeCoordinates.js"></script>
+  <script src="flags_final_76_fixed.js"></script>
+  <script src="script_animated_V3.js"></script>
+</body>
+</html>
